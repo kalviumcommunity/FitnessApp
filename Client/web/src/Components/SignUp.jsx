@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import "./SignUp.css"
 
 const SignUp = () => {
-  const [email, setEmail] = useState('');
+  const [username, setusername] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
@@ -17,13 +17,13 @@ const SignUp = () => {
       <h2 className="signup-title">Sign Up</h2>
       <form onSubmit={handleSignUp}>
         <div className="signup-form-group">
-          <label className="signup-label" htmlFor="email">Username:</label>
+          <label className="signup-label" htmlFor="username">Username:</label>
           <input
-            type="email"
+            type="username"
             className="signup-input"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            id="username"
+            value={username}
+            onChange={(e) => setusername(e.target.value)}
             required
           />
         </div>
