@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './SignIn.css'; // Import the CSS file
+import './SignIn.css'; 
 
 const SignIn = () => {
     const [formData, setFormData] = useState({
@@ -18,8 +18,8 @@ const SignIn = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle sign-in logic here
-        console.log(formData); // Example: Log form data to console
+        
+        console.log(formData); 
     }
 
     return (

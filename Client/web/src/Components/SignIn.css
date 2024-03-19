@@ -1,6 +1,4 @@
-/* Style for the SignIn component */
 
-/* Page container */
 .page-container {
     display: flex;
     justify-content: center;
@@ -8,10 +6,10 @@
     height: 100vh;
 }
   
-/* Container */
+
 .sign-in-container {
     width: 100%;
-    max-width: 500px; /* Adjusted max-width */
+    max-width: 500px; 
     padding: 20px;
     margin-top: 200px;
     margin-left: 450px;
@@ -33,7 +31,6 @@
     }
 }
   
-/* Title */
 .sign-in-title {
     text-align: center;
     font-size: 28px;
@@ -41,25 +38,25 @@
     margin-bottom: 20px;
 }
   
-/* Form */
+
 .sign-in-form {
     display: flex;
     flex-direction: column;
 }
   
-/* Form Field */
+
 .sign-in-form input {
     margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 80%; /* Ensuring the input fields take up full width */
+    width: 80%; 
 }
   
-/* Submit Button */
+
 .sign-in-form button {
     padding: 10px 10px;
-    background-color: #3498db;
+    background-color:#3498db;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -68,17 +65,17 @@
 }
   
 .sign-in-form button:hover {
-    background-color: #2980b9;
+    background-color:  #2980b9;
 }
   
-/* Sign Up Link */
+
 .sign-up-link {
     text-align: center;
     margin-top: 15px;
 }
   
 .sign-up-link a {
-    color: #3498db;
+    color: #2980b9;
     text-decoration: none;
     transition: color 0.3s ease;
 }
