@@ -1,23 +1,31 @@
+/* Updated CSS for Navbar */
+
 nav {
-    background-color: #333;
+    background-color: #0ee807;
     padding: 10px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Ensures logo is on the left and navigation items are on the right */
+    align-items: center; /* Aligns items vertically */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Aligns logo vertically with navigation items */
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex; /* Makes navigation items display inline */
 }
 
 nav ul li {
-    display: inline-block;
     margin-right: 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(7, 0, 0);
     text-decoration: none;
     padding: 10px;
     transition: background-color 0.3s;

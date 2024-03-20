@@ -1,40 +1,33 @@
-/* Style for the SignUp component */
-
-/* Container */
 .signup-container {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
     margin-top: 100px;
-    border: 2px solid #3498db;
+    border: 2px solid #e74c3c; /* Changed blue to red */
     border-radius: 10px;
     background-color: #f1f1f1;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
   
-  /* Title */
   .signup-title {
     text-align: center;
     font-size: 28px;
-    color: #3498db;
+    color: #e74c3c; /* Changed blue to red */
     margin-bottom: 20px;
   }
   
-  /* Form Group */
   .signup-form-group {
     margin-bottom: 15px;
   }
   
-  /* Label */
   .signup-label {
     display: block;
     font-size: 16px;
     margin-bottom: 5px;
     color: #333;
   }
-  
-  /* Input */
+
   .signup-input {
     width: 100%;
     padding: 7px;
@@ -42,11 +35,10 @@
     border-radius: 5px;
   }
   
-  /* Submit Button */
   .signup-submit {
     width: 100%;
     padding: 10px 0;
-    background-color: #3498db;
+    background-color: #e74c3c; /* Changed blue to red */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -55,23 +47,22 @@
   }
   
   .signup-submit:hover {
-    background-color: #2980b9;
+    background-color: #c0392b; /* Changed blue to red */
   }
   
-  /* Message */
+  
   .signup-message {
     text-align: center;
     margin-top: 15px;
   }
   
-  /* Sign In Link */
+  
   .signup-link {
-    color: #3498db;
+    color: #e74c3c; /* Changed blue to red */
     text-decoration: none;
     transition: color 0.3s ease;
   }
   
   .signup-link:hover {
-    color: #2980b9;
+    color: #c0392b; /* Changed blue to red */
   }
-  
