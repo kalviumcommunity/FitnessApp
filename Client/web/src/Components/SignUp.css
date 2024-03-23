@@ -4,7 +4,7 @@
     margin: 0 auto;
     padding: 20px;
     margin-top: 100px;
-    border: 2px solid #e74c3c; /* Changed blue to red */
+    border: 2px solid #e74c3c; 
     border-radius: 10px;
     background-color: #f1f1f1;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -13,7 +13,7 @@
   .signup-title {
     text-align: center;
     font-size: 28px;
-    color: #e74c3c; /* Changed blue to red */
+    color: #e74c3c; 
     margin-bottom: 20px;
   }
   
@@ -38,7 +38,7 @@
   .signup-submit {
     width: 100%;
     padding: 10px 0;
-    background-color: #e74c3c; /* Changed blue to red */
+    background-color: #e74c3c; 
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -47,7 +47,7 @@
   }
   
   .signup-submit:hover {
-    background-color: #c0392b; /* Changed blue to red */
+    background-color: #c0392b; 
   }
   
   
@@ -58,11 +58,11 @@
   
   
   .signup-link {
-    color: #e74c3c; /* Changed blue to red */
+    color: #e74c3c; 
     text-decoration: none;
     transition: color 0.3s ease;
   }
   
   .signup-link:hover {
-    color: #c0392b; /* Changed blue to red */
+    color: #c0392b; 
   }
