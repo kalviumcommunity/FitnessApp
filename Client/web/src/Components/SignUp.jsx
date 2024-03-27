@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link , useNavigate } from 'react-router-dom';
 import "./SignUp.css"
 
-const SignUp = () => {
+const SignUp = ({setIsLoggedIn}) => {
   const [username, setusername] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const Navigate = useNavigate()
 
   const handleSignUp = (e) => {
     e.preventDefault();
     console.log('Signing up...');
+    setIsLoggedIn(true);
+    Navigate("/")
   };
 
   return (
