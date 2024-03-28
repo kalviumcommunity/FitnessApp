@@ -6,9 +6,10 @@ import Contact from './Components/Contact';
 import SignIn from './Components/SignIn';
 import About from './Components/About';
 import SignUp from './Components/SignUp';
+import Footer from './Components/Footer';
 
 const App = () => {
-  const[IsLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <Router>
       <Navbar />
@@ -16,9 +17,10 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/signin" element={<SignIn setIsLoggedIn={setIsLoggedIn}/>} />
-        <Route path='/signup' element={<SignUp setIsLoggedIn={setIsLoggedIn}/>} />
+        <Route path="/signin" element={<SignIn setIsLoggedIn={setIsLoggedIn} />} />
+        <Route path='/signup' element={<SignUp setIsLoggedIn={setIsLoggedIn} />} />
       </Routes>
+      <Footer /> 
     </Router>
   );
 };
