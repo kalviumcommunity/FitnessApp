@@ -26,7 +26,7 @@ const SignIn = ({setIsLoggedIn}) => {
             return;
         }
         
-        // If both username and password are provided, clear any existing error message.
+        
         setError('');
 
         console.log(formData); 
