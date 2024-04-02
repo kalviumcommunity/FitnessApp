@@ -1,10 +1,10 @@
 import React from 'react';
+import "./Home.css";
 
 const Home = () => {
     return (
-        <div>
-            <h2>Welcome to Fitness App</h2>
-            <p>This is the home page of our fitness app.</p>
+        <div className="home-container">
+            <div className="background-text">WORKOUTS</div>
         </div>
     );
 }
