@@ -1,18 +1,37 @@
-*{
-    background-color:grey;
-}
 .home-container {
     position: relative;
-    margin-top: 250px;
-    font-weight: 200;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Add this line */
+}
+
+.box {
+    width: 300%; 
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.above {
+    margin-bottom: 20px; 
 }
 
 .background-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 100px; /* Adjust size as needed */
-    color:white;
-    pointer-events: none; /* Ensures that the text doesn't interfere with user interactions */
+    font-size: 48px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.inner-box {
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    margin: 0 10px;
 }

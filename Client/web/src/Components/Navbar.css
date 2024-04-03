@@ -1,17 +1,20 @@
 nav {
     background-color: grey;
-    padding: 10px 20px;
+    padding: 5px 10px; /* Adjusted padding */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 90px; /* Adjusted height */
 }
 
 .logo-container {
     display: flex;
     align-items: center;
-    margin-left: 500px;
-    height: 100px;
-    width: 100px;
+    margin-left: 20px; /* Adjusted margin */
+    height: 100px; /* Adjusted height */
+    width: 100px; /* Adjusted width */
+    margin-top: 200px; /* Adjusted margin-top to push logo down */
+    
 }
 
 nav ul {
@@ -22,17 +25,17 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 0; /* Remove the margin */
+    margin-right: 10px; /* Adjusted margin-right */
 }
 
 nav ul li:last-child {
-    margin-right: 0; /* Remove the margin for the last item */
+    margin-right: 0; 
 }
 
 nav ul li a {
     color: black;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px 10px; /* Adjusted padding */
     transition: background-color 0.3s;
 }
 
@@ -45,7 +48,15 @@ nav ul li a.active {
     background-color: white;
     border-radius: 4px;
 }
-a{
-    margin-left: 100px;
+
+a {
+    margin-left: 20px; /* Adjusted margin-left */
     background-color: red;
+
+}
+
+.logo-container img{
+    width: 200px;
+    margin-bottom: 80px;
+    margin-left: 550px;
 }
