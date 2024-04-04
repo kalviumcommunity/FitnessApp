@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "./Home.css";
 import backgroundImage from "../assets/background.avif"; 
 import Chest from './Chest';
+import Shoulder from './Shoulder';
 import WORKOUTS from "../assets/chest.png";
 import { Link } from 'react-router-dom';
 
@@ -19,7 +20,7 @@ const Home = () => {
                     <button className="view-workout-btn">View Workout</button>
                 </div>
             </Link>
-            <Link to="/" className="box above" onClick={() => handleBoxClick(null)}>
+            <Link to="/Shoulder" className="box above" onClick={() => handleBoxClick(null)}>
                 <div className="inner-box">
                     <img src="https://play-lh.googleusercontent.com/Q36ZaK_YdHFyMTcM22ZLzjxsRp62giJu8CcnDaw51IMl6fz4e9Wlf-14t7pP6TemFz8" alt="" />
                     <button className="view-workout-btn">View Workout</button>
