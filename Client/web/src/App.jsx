@@ -8,6 +8,7 @@ import SignUp from './Components/SignUp';
 import Footer from './Components/Footer';
 import Chest from './Components/Chest';
 import Shoulder from './Components/Shoulder';
+import Back from './Components/Back';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -21,6 +22,7 @@ const App = () => {
         <Route path='/signup' element={<SignUp setIsLoggedIn={setIsLoggedIn} />} />
         <Route path="/chest" element={<Chest/>} />
         <Route path="/Shoulder" element={<Shoulder/>} />
+        <Route path="/Back" element={<Back/>} />
       </Routes>
       <Footer /> 
     </Router>

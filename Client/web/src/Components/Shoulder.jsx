@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Import Link from React Router
-import "./Shoulder.css"; // Import the CSS file
+import { Link } from "react-router-dom"; 
+import "./Shoulder.css"; 
 
 function Shoulder() {
   const [exercises, setExercises] = useState([
@@ -23,7 +23,7 @@ function Shoulder() {
             <div className="sets-reps-weight">
               {exercise.sets} sets of {exercise.reps} reps at {exercise.weight} lbs
             </div>
-            <Link to="/shoulder"> {/* Link to the Shoulder component */}
+            <Link to="/shoulder"> 
               <button className="record-button" onClick={() => recordSet(index)}>View Workout</button>
             </Link>
           </li>

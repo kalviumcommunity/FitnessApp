@@ -5,6 +5,7 @@ import Chest from './Chest';
 import Shoulder from './Shoulder';
 import WORKOUTS from "../assets/chest.png";
 import { Link } from 'react-router-dom';
+import Back from './Back';
 
 const Home = () => {
     const [activeComponent, setActiveComponent] = useState(null);
@@ -26,7 +27,7 @@ const Home = () => {
                     <button className="view-workout-btn">View Workout</button>
                 </div>
             </Link>
-            <Link to="/" className="box above" onClick={() => handleBoxClick(null)}>
+            <Link to="/Back" className="box above" onClick={() => handleBoxClick(null)}>
                 <div className="inner-box">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2HrQRyadu-xGTnBnnudgXlSKyNQb6c4BA15vZJy38_4kOEmnSPGuQ31IUBs279Dy4YP4&usqp=CAU" alt="" />
                     <button className="view-workout-btn">View Workout</button>
