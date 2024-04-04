@@ -1,0 +1,39 @@
+.back-container {
+    margin: 20px;
+  }
+  
+  .exercise-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .exercise-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+  }
+  
+  .exercise-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .sets-reps-weight {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  .record-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .record-button:hover {
+    background-color: #0056b3;
+  }
+  
