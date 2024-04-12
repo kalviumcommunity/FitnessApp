@@ -6,6 +6,7 @@ import Shoulder from './Shoulder';
 import WORKOUTS from "../assets/chest.png";
 import { Link } from 'react-router-dom';
 import Back from './Back';
+import Biceps from './Biceps';
 
 const Home = () => {
     const [activeComponent, setActiveComponent] = useState(null);
@@ -33,7 +34,7 @@ const Home = () => {
                     <button className="view-workout-btn">View Workout</button>
                 </div>
             </Link>
-            <Link to="/" className="box above" onClick={() => handleBoxClick(null)}>
+            <Link to="/Biceps" className="box above" onClick={() => handleBoxClick(null)}>
                 <div className="inner-box">
                     <img src="https://athleanx.com/wp-content/uploads/2021/11/BICEPS_MAIN-IMAGE.png" alt="" />
                     <button className="view-workout-btn">View Workout</button>
