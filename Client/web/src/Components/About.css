@@ -1,41 +1,61 @@
-/* About.css */
 .about-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-  }
-  
-  .about-content {
-    background-color: #f9f9f9;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .highlight {
-    color: #ff6f61;
+}
+
+.about-content {
+    text-align: center;
+}
+
+.highlight {
     font-weight: bold;
-  }
-  
-  .quote {
-    margin-top: 30px;
-  }
-  
-  .quote-text {
+    color: #ff7f50; /* Adjust the color as needed */
+}
+
+.quote {
+    margin-top: 20px;
+}
+
+.quote-text {
     font-style: italic;
-  }
-  
-  /* About.css */
+}
+
 .contact-info {
     margin-top: 20px;
-  }
-  
-  .contact-info p {
-    font-size: 16px;
-  }
-  
-  .quote-author {
-    text-align: right;
-    margin-top: 10px;
-  }
-  
+}
+
+.feedback-section {
+    margin-top: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff7f50; /* Adjust the color as needed */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6347; /* Adjust the hover color as needed */
+}
