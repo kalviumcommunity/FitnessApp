@@ -38,7 +38,16 @@
     cursor: pointer;
     transition: background-color 0.3s ease; /* Smooth hover transition */
 }
-
+.favorite-btn {
+    position: absolute;
+    top: 5px; /* Adjust as needed */
+    left: 300px; /* Adjust as needed */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 325px;
+  }
+  
 .view-workout-btn:hover {
     background-color: #0056b3;
 }
