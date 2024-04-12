@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import Back from './Back';
 import Biceps from './Biceps';
 
+
 const Home = () => {
     const [activeComponent, setActiveComponent] = useState(null);
     const handleBoxClick = (component) => {
@@ -74,8 +75,19 @@ const Home = () => {
                 </div>
             </Link>
             
-            
+            {/* Render the active component */}
             {activeComponent && <activeComponent />}
+            
+            {/* Render the Workoutchart component */}
+            {/* {activeComponent === Workoutchart && <Workoutchart />} */}
+
+            <Link to="/workoutplan" className="box below" onClick={() => handleBoxClick(null)}>
+    <div className="inner-box">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.7xEHYPV_HQZMI6xSfmYwgAHaE4&pid=Api&P=0&h=180" alt="Workout Plan" />
+        <button className="view-workout-btn">View Workout Plan</button>
+    </div>
+</Link>
+
         </div>
     );
 }
