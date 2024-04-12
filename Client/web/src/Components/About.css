@@ -1,0 +1,41 @@
+/* About.css */
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .about-content {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .highlight {
+    color: #ff6f61;
+    font-weight: bold;
+  }
+  
+  .quote {
+    margin-top: 30px;
+  }
+  
+  .quote-text {
+    font-style: italic;
+  }
+  
+  /* About.css */
+.contact-info {
+    margin-top: 20px;
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+  }
+  
+  .quote-author {
+    text-align: right;
+    margin-top: 10px;
+  }
+  
