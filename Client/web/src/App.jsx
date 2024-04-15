@@ -12,7 +12,9 @@ import Back from './Components/Back';
 import Biceps from './Components/Biceps';
 import ImageView from './Components/imageview.jsx';
 import Workoutplan from './Components/Workoutplan.jsx';
-
+import Triceps from './Components/Triceps.jsx';
+import Forearms from './Components/Forearms.jsx';
+import Leg from './Components/Leg.jsx';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -27,9 +29,11 @@ const App = () => {
         <Route path="/chest" element={<Chest/>} />
         <Route path="/Shoulder" element={<Shoulder/>} />
         <Route path='/workoutplan' element={<Workoutplan/>}/>
-  
         <Route path="/Back" element={<Back/>} />
         <Route path="/Biceps" element={<Biceps/>} />
+        <Route path="/Triceps" element={<Triceps/>} />
+        <Route path="/Forearms" element={<Forearms/>} />
+        <Route path="/Leg" element={<Leg/>} />
       </Routes>
       <Footer /> 
     </Router>

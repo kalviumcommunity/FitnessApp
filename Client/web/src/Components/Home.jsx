@@ -7,6 +7,9 @@ import WORKOUTS from "../assets/chest.png";
 import { Link } from 'react-router-dom';
 import Back from './Back';
 import Biceps from './Biceps';
+import Triceps from './Triceps';
+import Forearms from './Forearms';
+import Leg from './Leg';
 
 
 const Home = () => {
@@ -47,21 +50,21 @@ const Home = () => {
             
             {/* <div className="background-text">WORKOUTS</div> */}
             
-            <Link to="/" className="box below" onClick={() => handleBoxClick(null)}>
+            <Link to="/Triceps" className="box below" onClick={() => handleBoxClick(null)}>
                 <div className="inner-box">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe86dvGYHvodW-Yl1qwiL2L2k681nfEEgMgnuleqcPLw&s" alt="" />
                     <button className="view-workout-btn">View Workout</button>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQADfCXklJ2F3Ug6N199VFUc_CbeAsD2tEy8w&s" alt="favorite" className="favorite-btn" />
                 </div>
             </Link>
-            <Link to="/" className="box below" onClick={() => handleBoxClick(null)}>
+            <Link to="/Forearms" className="box below" onClick={() => handleBoxClick(null)}>
                 <div className="inner-box">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC7EzZwvV6KMT3Lcm_mRCOaFouo7xC371y5Uih8yoobg&s" alt="" />
                     <button className="view-workout-btn">View Workout</button>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQADfCXklJ2F3Ug6N199VFUc_CbeAsD2tEy8w&s" alt="favorite" className="favorite-btn" />
                 </div>
             </Link>
-            <Link to="/" className="box below" onClick={() => handleBoxClick(null)}>
+            <Link to="/Leg" className="box below" onClick={() => handleBoxClick(null)}>
                 <div className="inner-box">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuNraqAo2lfzrDlze2lz_gVMLPUhtR2g_4ZK9gLidNQw&s" alt="" />
                     <button className="view-workout-btn">View Workout</button>
