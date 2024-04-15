@@ -27,6 +27,7 @@
     max-height: 70%; /* Adjust height to fit inside the box */
     object-fit: contain; /* Ensure entire image is visible within the box */
     margin-bottom: 10px; /* Add margin between image and button */
+    z-index: 999;
 }
 
 .view-workout-btn {
@@ -51,3 +52,4 @@
 .view-workout-btn:hover {
     background-color: #0056b3;
 }
+
