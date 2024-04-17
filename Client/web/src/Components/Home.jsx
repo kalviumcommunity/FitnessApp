@@ -12,6 +12,23 @@ import Triceps from './Triceps';
 import Forearms from './Forearms';
 import Leg from './Leg';
 
+// Advertisement component
+const Advertisement = () => {
+    return (
+        <div className="advertisement">
+            <h3>Unlock Premium Membership for Exclusive Benefits!</h3>
+            <p>Get access to personalized workout plans, expert guidance, premium videos, and more!</p>
+            <div className="membership-rates">
+                <p>Monthly Membership: $19.99</p>
+                <p>Yearly Membership: $199.99</p>
+            </div>
+            <Link to="/membership" className="membership-link">
+                <button className="membership-btn">Learn More</button>
+            </Link>
+        </div>
+    );
+}
+
 
 const Home = () => {
     const [activeComponent, setActiveComponent] = useState(null);
@@ -39,6 +56,7 @@ const Home = () => {
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQADfCXklJ2F3Ug6N199VFUc_CbeAsD2tEy8w&s" alt="favorite" className="favorite-btn" onClick={() => handleAddToFavorites(Chest)} />
                     </Link>
                 </div>
+                <Advertisement /> {/* Add the advertisement component */}
                 <div className="inner-box box below">
                     <img src="https://play-lh.googleusercontent.com/Q36ZaK_YdHFyMTcM22ZLzjxsRp62giJu8CcnDaw51IMl6fz4e9Wlf-14t7pP6TemFz8" alt="" />
                     <Link to="/Shoulder" className="box above" onClick={() => handleBoxClick(null)}>
@@ -66,28 +84,12 @@ const Home = () => {
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQADfCXklJ2F3Ug6N199VFUc_CbeAsD2tEy8w&s" alt="favorite" className="favorite-btn" onClick={() => handleAddToFavorites(Biceps)} />
                     </Link>
                 </div>
-                ...
-
-
-            {/* Render the active component */}
-            {activeComponent && <ActiveComponent />}
-
-            {/* Render the Workoutchart component */}
-            {/* {activeComponent === Workoutchart && <Workoutchart />} */}
-
-            <Link to="/workoutplan" onClick={() => handleBoxClick(null)}>
-                <div className="inner-box">
-                    <img src="https://tse2.mm.bing.net/th?id=OIP.7xEHYPV_HQZMI6xSfmYwgAHaE4&pid=Api&P=0&h=180" alt="Workout Plan" />
-                    <button className="view-workout-btn">View Workout Plan</button>
-                </div>
-            </Link>
-        </div>
-        <Link to="/favourite"></Link> {/* This link should navigate to the favorite page */}
-        {/* <Favorite favorites={favorites} /> */}
-    
+                {/* Other inner boxes */}
+            </div>
+            <Link to="/favourite"></Link> {/* This link should navigate to the favorite page */}
+            {/* <Favorite favorites={favorites} /> */}
         </>
     );
 }
 
 export default Home;
-
