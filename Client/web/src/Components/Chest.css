@@ -17,6 +17,17 @@
   border-radius: 5px;
   overflow: hidden;
 }
+.exercise-item img {
+  width: 100%;
+  max-width: 300px; /* Adjust the max-width as needed */
+  height: auto;
+  cursor: pointer; /* Add pointer cursor to indicate it's clickable */
+  transition: transform 0.2s ease; /* Add a smooth transition effect */
+}
+
+.exercise-item img:hover {
+  transform: scale(1.1); /* Increase size slightly on hover */
+}
 
 .exercise-name {
   font-size: 20px;
