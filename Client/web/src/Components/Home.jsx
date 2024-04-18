@@ -40,7 +40,17 @@ const Home = () => {
     };
 
     const handleAddToFavorites = (component) => {
-        setFavorites([...favorites, component]);
+        setFavorites(prevFavorites => {
+            if (!prevFavorites.includes(component)) {
+                return [...prevFavorites, component];
+            } else {
+                return prevFavorites.filter(item => item !== component);
+            }
+        });
+    };
+
+    const handleRemoveFromFavorites = (component) => {
+        setFavorites(prevFavorites => prevFavorites.filter(item => item !== component));
     };
 
     return (
@@ -81,7 +91,7 @@ const Home = () => {
                 {/* Other inner boxes */}
             </div>
             {/* This link should navigate to the favorite page */}
-            <Favorite favorites={favorites} />
+            <Favorite favorites={favorites} removeFromFavorites={handleRemoveFromFavorites}/>
         </>
     );
 }

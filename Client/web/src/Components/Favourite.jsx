@@ -1,6 +1,10 @@
 import React from 'react';
 
-const Favorite = ({ favorites }) => {
+const Favorite = ({ favorites, removeFromFavorites }) => {
+    const handleRemoveFromFavorites = (exercise) => {
+        removeFromFavorites(exercise);
+    };
+
     return (
         <div className="favourite-page">
             <h2>Favourite Exercises</h2>
@@ -13,6 +17,9 @@ const Favorite = ({ favorites }) => {
                         </div>
                         <img src={exercise.image} alt={exercise.name} />
                         <p>{exercise.description}</p>
+                        <button onClick={() => handleRemoveFromFavorites(exercise)}>
+                            Remove from Favorites
+                        </button>
                     </li>
                 ))}
             </ul>
