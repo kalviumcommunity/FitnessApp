@@ -12,15 +12,16 @@ import Triceps from './Triceps';
 import Forearms from './Forearms';
 import Leg from './Leg';
 
-// Advertisement component
+
+
 const Advertisement = () => {
     return (
         <div className="advertisement">
             <h3>Unlock Premium Membership for Exclusive Benefits!</h3>
             <p>Get access to personalized workout plans, expert guidance, premium videos, and more!</p>
             <div className="membership-rates">
-                <p>Monthly Membership: $19.99</p>
-                <p>Yearly Membership: $199.99</p>
+                <p>Monthly Membership: 1200</p>
+                <p>Yearly Membership: 8000</p>
             </div>
             <Link to="/membership" className="membership-link">
                 <button className="membership-btn">Learn More</button>
@@ -32,17 +33,15 @@ const Advertisement = () => {
 
 const Home = () => {
     const [activeComponent, setActiveComponent] = useState(null);
-    const [favorites, setFavorites] = useState([]); // State for storing favorites
+    const [favorites, setFavorites] = useState([]); 
 
     const handleBoxClick = (component) => {
         setActiveComponent(component);
     };
 
-    // Function to add component to favorites
     const handleAddToFavorites = (component) => {
         setFavorites([...favorites, component]);
     };
-
 
     return (
         <>
@@ -52,9 +51,7 @@ const Home = () => {
                     <Link to="/chest" className="box above" onClick={() => handleBoxClick(Chest)}>
                         <button className="view-workout-btn">View Workout</button>
                     </Link>
-                    <Link to="/favourite" className="favorite-link">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQADfCXklJ2F3Ug6N199VFUc_CbeAsD2tEy8w&s" alt="favorite" className="favorite-btn" onClick={() => handleAddToFavorites(Chest)} />
-                    </Link>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQADfCXklJ2F3Ug6N199VFUc_CbeAsD2tEy8w&s" alt="favorite" className="favorite-btn" onClick={() => handleAddToFavorites(Chest)} />  
                 </div>
                 <Advertisement /> {/* Add the advertisement component */}
                 <div className="inner-box box below">
@@ -62,32 +59,29 @@ const Home = () => {
                     <Link to="/Shoulder" className="box above" onClick={() => handleBoxClick(null)}>
                         <button className="view-workout-btn">View Workout</button>
                     </Link>
-                    <Link to="/favourite" className="favorite-link">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQADfCXklJ2F3Ug6N199VFUc_CbeAsD2tEy8w&s" alt="favorite" className="favorite-btn" onClick={() => handleAddToFavorites(Shoulder)} />
-                    </Link>
                 </div>
                 <div className="inner-box box below">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2HrQRyadu-xGTnBnnudgXlSKyNQb6c4BA15vZJy38_4kOEmnSPGuQ31IUBs279Dy4YP4&usqp=CAU" alt="" />
                     <Link to="/Back" className="box above" onClick={() => handleBoxClick(null)}>
                         <button className="view-workout-btn">View Workout</button>
                     </Link>
-                    <Link to="/favourite" className="favorite-link">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQADfCXklJ2F3Ug6N199VFUc_CbeAsD2tEy8w&s" alt="favorite" className="favorite-btn" onClick={() => handleAddToFavorites(Back)} />
-                    </Link>
+
                 </div>
                 <div className="inner-box box below">
                     <img src="https://athleanx.com/wp-content/uploads/2021/11/BICEPS_MAIN-IMAGE.png" alt="" />
                     <Link to="/Biceps" className="box above" onClick={() => handleBoxClick(null)}>
                         <button className="view-workout-btn">View Workout</button>
                     </Link>
-                    <Link to="/favourite" className="favorite-link">
+
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQADfCXklJ2F3Ug6N199VFUc_CbeAsD2tEy8w&s" alt="favorite" className="favorite-btn" onClick={() => handleAddToFavorites(Biceps)} />
-                    </Link>
+
                 </div>
                 {/* Other inner boxes */}
             </div>
-            <Link to="/favourite"></Link> {/* This link should navigate to the favorite page */}
-            {/* <Favorite favorites={favorites} /> */}
+            {/* This link should navigate to the favorite page */}
+            <Favorite favorites={favorites} />
         </>
     );
 }
