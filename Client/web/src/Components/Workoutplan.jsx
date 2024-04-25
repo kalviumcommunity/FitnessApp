@@ -29,21 +29,21 @@ const Workoutplan = () => {
       <div className="day">
         <h2>Thursday</h2>
         <ul>
-          <li>Chest workout</li>
+          <li>Triceps Workout</li>
           <li>Arms workout</li>
         </ul>
       </div>
       <div className="day">
         <h2>Friday</h2>
         <ul>
-          <li>Rest day</li>
+          <li>Abs and Cardio</li>
         </ul>
       </div>
       <div className="day">
         <h2>Saturday</h2>
         <ul>
           <li>Full body workout</li>
-          <li>Cardio</li>
+          <li>Leg</li>
         </ul>
       </div>
       <div className="day">

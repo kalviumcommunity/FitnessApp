@@ -15,11 +15,9 @@ const About = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Here you can implement the logic to submit the feedback and rating to your backend or store it locally.
         console.log('Feedback:', feedback);
         console.log('Rating:', rating);
-        // You may want to add validation and error handling here.
-        // Reset the form fields after submission
+        
         setFeedback('');
         setRating(0);
     };

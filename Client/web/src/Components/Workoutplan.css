@@ -1,51 +1,51 @@
+/* Workoutplan.css */
+
 .weekly-workout-plan {
-  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  font-family: Arial, sans-serif;
+  max-width: 800px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.weekly-workout-plan h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
 }
 
 .day {
   margin-bottom: 30px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
 }
 
-h1 {
-  text-align: center;
-  color: #333;
+.day h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
-h2 {
-  color: #666;
+.day ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+.day ul li {
+  font-size: 16px;
+  margin-bottom: 8px;
 }
 
-li {
-  margin-bottom: 5px;
-  color: #444;
+/* Style for odd days */
+.day:nth-child(odd) {
+  background-color: #fff;
 }
 
-
-.day {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s ease forwards;
+/* Style for even days */
+.day:nth-child(even) {
+  background-color: #f0f0f0;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Hover effect for list items */
+.day ul li:hover {
+  color: #007bff;
+  cursor: pointer;
 }
