@@ -17,6 +17,7 @@ import Leg from './Components/Leg.jsx';
 import Favourite from './Components/Favourite.jsx';
 import Membership from './Components/Membership.jsx';
 import Workoutplan from './Components/Workoutplan.jsx';
+import Subscribe from './Components/Subscribe.jsx';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -40,6 +41,8 @@ const App = () => {
         <Route path='/membership' element={<Membership/>}/>
         <Route path='/Favourite' element={<Favourite/>}/>
         <Route path='/Workoutplan'element={<Workoutplan/>}/>
+        <Route path='/Subscribe'element={<Subscribe/>}/>
+
 
       </Routes>
       <Footer /> 
