@@ -10,7 +10,7 @@
 
 .highlight {
     font-weight: bold;
-    color: #ff7f50; /* Adjust the color as needed */
+    color: #ff7f50; 
 }
 
 .quote {
@@ -48,7 +48,7 @@ select {
 
 button {
     padding: 10px 20px;
-    background-color: #ff7f50; /* Adjust the color as needed */
+    background-color: #ff7f50; 
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -57,5 +57,5 @@ button {
 }
 
 button:hover {
-    background-color: #ff6347; /* Adjust the hover color as needed */
+    background-color: #ff6347; 
 }
