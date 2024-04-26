@@ -1,4 +1,4 @@
-// Subscribe.js
+
 
 import React, { useState } from 'react';
 import "./Subscribe.css"
@@ -27,7 +27,7 @@ function Subscribe() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can handle form submission logic here, such as sending data to backend or processing registration
+    
     console.log(`Name: ${name}, Email: ${email}, Password: ${password}, Plan: ${selectedPlan}`);
   };
 
@@ -54,15 +54,6 @@ function Subscribe() {
             <input type="radio" name="plan" value="basic" onChange={handlePlanChange} required />
           </label>
           <br />
-          <label>
-            Premium Plan - ₹999/month:
-            <input type="radio" name="plan" value="premium" onChange={handlePlanChange} required />
-          </label>
-          <br />
-          <label>
-            Platinum Plan - ₹1499/month:
-            <input type="radio" name="plan" value="platinum" onChange={handlePlanChange} required />
-          </label>
         </div>
         <button type="submit" className="subscribe-button">Register</button>
       </form>

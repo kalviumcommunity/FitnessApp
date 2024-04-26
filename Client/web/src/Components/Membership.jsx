@@ -1,7 +1,5 @@
-// Membership.js
-
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link } from 'react-router-dom'; 
 import "./Membership.css";
 
 function Membership() {
@@ -13,7 +11,7 @@ function Membership() {
           <h3>Basic Plan</h3>
           <p>Access to basic features</p>
           <p>Monthly subscription: ₹ 499</p>
-          <Link to="/Subscribe"> {/* Link to the Subscribe component */}
+          <Link to="/Subscribe"> 
             <button>Subscribe Now</button>
           </Link>
         </div>
@@ -21,7 +19,7 @@ function Membership() {
           <h3>Premium Plan</h3>
           <p>Access to premium features</p>
           <p>Monthly subscription: ₹ 999</p>
-          <Link to="/Subscribe"> {/* Link to the Subscribe component */}
+          <Link to="/Premium"> 
             <button>Subscribe Now</button>
           </Link>
         </div>
@@ -29,7 +27,7 @@ function Membership() {
           <h3>Platinum Plan</h3>
           <p>Access to all features</p>
           <p>Monthly subscription: ₹ 1499</p>
-          <Link to="/Subscribe"> {/* Link to the Subscribe component */}
+          <Link to="/Platinum"> 
             <button>Subscribe Now</button>
           </Link>
         </div>
