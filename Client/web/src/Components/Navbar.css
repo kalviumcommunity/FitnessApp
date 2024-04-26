@@ -1,19 +1,19 @@
 nav {
     background-color: grey;
-    padding: 5px 10px; /* Adjusted padding */
+    padding: 5px 10px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 90px; /* Adjusted height */
+    height: 90px; 
 }
 
 .logo-container {
     display: flex;
     align-items: center;
-    margin-right: 40px; /* Adjusted margin */
-    height: 100px; /* Adjusted height */
-    width: 100px; /* Adjusted width */
-    margin-top: 200px; /* Adjusted margin-top to push logo down */
+    margin-right: 40px; 
+    height: 100px; 
+    width: 100px; 
+    margin-top: 200px; 
     
 }
 
@@ -25,7 +25,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 10px; /* Adjusted margin-right */
+    margin-right: 10px; 
 }
 
 nav ul li:last-child {
@@ -35,7 +35,7 @@ nav ul li:last-child {
 nav ul li a {
     color: black;
     text-decoration: none;
-    padding: 5px 10px; /* Adjusted padding */
+    padding: 5px 10px; 
     transition: background-color 0.3s;
 }
 
@@ -50,7 +50,7 @@ nav ul li a.active {
 }
 
 a {
-    margin-left: 20px; /* Adjusted margin-left */
+    margin-left: 20px; 
     background-color: red;
 
 }

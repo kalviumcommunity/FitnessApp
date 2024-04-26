@@ -1,4 +1,4 @@
-/* Chest.css */
+
 .chest-container {
   max-width: 800px;
   margin: 0 auto;
@@ -52,7 +52,6 @@
   margin-top: 10px;
 }
 
-/* Chest.css */
 .modal {
   display: flex;
   justify-content: center;

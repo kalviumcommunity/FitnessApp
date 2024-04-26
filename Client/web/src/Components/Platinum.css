@@ -1,7 +1,6 @@
-
-.subscribe-container {
+.platinum-container {
     max-width: 400px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
@@ -10,49 +9,45 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  .subscribe-heading {
+}
+
+.platinum-heading {
     text-align: center;
     font-size: 24px;
     margin-bottom: 20px;
     color: #333;
-  }
-  
- 
-  .subscribe-form {
+}
+
+.platinum-form {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     width: 100%;
-  }
-  
-  
-  .subscribe-label {
+}
+
+.platinum-label {
     margin-bottom: 8px;
     font-weight: bold;
-  }
-  
-  
-  .subscribe-input {
+}
+
+.platinum-input {
     padding: 10px;
     margin-bottom: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 100%;
-  }
-  
-  .subscribe-radio-label {
+}
+
+.platinum-radio-label {
     display: block;
     margin-bottom: 8px;
-  }
-  
-  .subscribe-radio-input {
+}
+
+.platinum-radio-input {
     margin-right: 8px;
-  }
-  
- 
-  .subscribe-button {
+}
+
+.platinum-button {
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
@@ -60,9 +55,8 @@
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
-  }
-  
-  .subscribe-button:hover {
+}
+
+.platinum-button:hover {
     background-color: #0056b3;
-  }
-  
+}

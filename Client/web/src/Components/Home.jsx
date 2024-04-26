@@ -95,9 +95,9 @@ const Home = () => {
                         <button className="view-workout-btn">View Workout Plan</button>
                     </Link>
                 </div>
-                {/* Other inner boxes */}
+                
             </div>
-            {/* This link should navigate to the favorite page */}
+            
             <Favorite favorites={favorites} removeFromFavorites={handleRemoveFromFavorites}/>
         </>
     );
