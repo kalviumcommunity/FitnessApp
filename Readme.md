@@ -4,8 +4,8 @@ This is a simple fitness website designed to help users stay fit and healthy.
 
 ## Features
 - Workout plan
-- calorie and target
-- weight and target
+- Diet plan
+- type of workout
 - signin and signout
 - contact
 
