@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-md-6">
             <h4>About GoFit</h4>
-            <p>GoFit is your ultimate fitness companion, helping you achieve your health and wellness goals. With personalized workout plans, nutrition tracking, and expert guidance, we empower you to live a healthier life.</p>
+            <p>GoFit is your ultimate fitness companion, helping you achieve your health and wellness goals. With personalized workout plans and expert guidance, we empower you to live a healthier life.</p>
           </div>
           <div className="col-md-3">
             <h4>Contact Us</h4>

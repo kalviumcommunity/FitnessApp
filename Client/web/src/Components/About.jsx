@@ -52,10 +52,11 @@ const About = () => {
                         <div className="form-group">
                             <label htmlFor="rating">Rating:</label>
                             <select id="rating" value={rating} onChange={handleRatingChange} required>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
+                                <option value="1">0</option>
+                                <option value="2">1</option>
+                                <option value="3">2</option>
+                                <option value="4">3</option>
+                                <option value="5">4</option>
                                 <option value="5">5</option>
                             </select>
                         </div>

@@ -28,7 +28,7 @@ function Platinum() {
     e.preventDefault();
     
     console.log(`Name: ${name}, Email: ${email}, Password: ${password}, Plan: ${selectedPlan}`);
-    // You can add further logic here, such as sending the form data to your backend or handling the subscription process
+    
   };
 
   return (

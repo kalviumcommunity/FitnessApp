@@ -3,6 +3,8 @@ require('dotenv').config()
 const {startDatabase,isConnected} = require('./db')
 const app = express();
 const port = 3000
+const cors = require('cors');
+const FeedbackRouter = require("./Routes/Feedback.route");
 
 
 app.get('/', (req, res) => {
@@ -10,7 +12,11 @@ app.get('/', (req, res) => {
     message: 'o_O',
     database: isConnected() ? 'connected' : 'disconnected'
   })
+
 });
+app.use(express.json())
+app.use(FeedbackRouter)
+app.use(cors())
 
 
 app.listen(port, async () => {
@@ -18,5 +24,8 @@ app.listen(port, async () => {
 
   console.log(`🚀 Server running on : 💻✨ ${port}`);
 });
+
+
+
 
 
