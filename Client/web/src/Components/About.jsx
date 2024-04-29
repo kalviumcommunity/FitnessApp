@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./About.css";
+import axios from "axios"
 
 const About = () => {
     const [feedback, setFeedback] = useState('');
@@ -8,13 +9,35 @@ const About = () => {
     const handleFeedbackChange = (e) => {
         setFeedback(e.target.value);
     };
-
+    function getCookie(name) {
+        let cookieArray = document.cookie.split('; ');
+        let cookie = cookieArray.find((row) => row.startsWith(name + '='));
+        return cookie ? cookie.split('=')[1] : null;
+    }
+    function setCookie(name, value, daysToExpire) {
+        let date = new Date();
+        date.setTime(date.getTime() + daysToExpire * 24 * 60 * 60 * 1000);
+        document.cookie = name + '=' + value + ';expires=' + date.toUTCString() + ';path=/';
+    }
     const handleRatingChange = (e) => {
         setRating(parseInt(e.target.value));
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        const name= getCookie('name')
+        axios
+      .post('http://localhost:3000/api/feedback', {
+        name: name,
+        feedback: feedback,rating:rating
+      })
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.error('Error submitting feedback:', error);
+      });
+
         console.log('Feedback:', feedback);
         console.log('Rating:', rating);
         
@@ -68,4 +91,4 @@ const About = () => {
     );
 }
 
-export default About;
+export default About

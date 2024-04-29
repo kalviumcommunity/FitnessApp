@@ -17,10 +17,20 @@ const SignIn = ({setIsLoggedIn}) => {
             [name]: value
         }));
     }
+    function getCookie(name) {
+        let cookieArray = document.cookie.split('; ');
+        let cookie = cookieArray.find((row) => row.startsWith(name + '='));
+        return cookie ? cookie.split('=')[1] : null;
+    }
+    function setCookie(name, value, daysToExpire) {
+        let date = new Date();
+        date.setTime(date.getTime() + daysToExpire * 24 * 60 * 60 * 1000);
+        document.cookie = name + '=' + value + ';expires=' + date.toUTCString() + ';path=/';
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
+        setCookie('name',username,365)
         if (!formData.username || !formData.password) {
             setError('Please enter both username and password.');
             return;

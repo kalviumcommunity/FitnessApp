@@ -5,7 +5,7 @@ const app = express();
 const port = 3000
 const cors = require('cors');
 const FeedbackRouter = require("./Routes/Feedback.route");
-
+app.use(cors())
 
 app.get('/', (req, res) => {
   res.json({
@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 });
 app.use(express.json())
 app.use(FeedbackRouter)
-app.use(cors())
+
 
 
 app.listen(port, async () => {

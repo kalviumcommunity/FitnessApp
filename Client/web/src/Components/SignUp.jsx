@@ -7,9 +7,19 @@ const SignUp = ({setIsLoggedIn}) => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const Navigate = useNavigate()
-
+  function getCookie(name) {
+    let cookieArray = document.cookie.split('; ');
+    let cookie = cookieArray.find((row) => row.startsWith(name + '='));
+    return cookie ? cookie.split('=')[1] : null;
+}
+function setCookie(name, value, daysToExpire) {
+    let date = new Date();
+    date.setTime(date.getTime() + daysToExpire * 24 * 60 * 60 * 1000);
+    document.cookie = name + '=' + value + ';expires=' + date.toUTCString() + ';path=/';
+}
   const handleSignUp = (e) => {
     e.preventDefault();
+    setCookie('name',username,365)
     console.log('Signing up...');
     setIsLoggedIn(true);
     Navigate("/")
