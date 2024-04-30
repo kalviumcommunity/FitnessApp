@@ -19,9 +19,9 @@ const Footer = () => {
           </div>
           <div className="col-md-3">
             <h4>Address</h4>
-            <p>12, AmbetkarStreet</p>
-            <p>pallavaram </p>
-            <p>chennai</p>
+            <p>12, Ambedkar Street</p>
+            <p>Pallavaram </p>
+            <p>Chennai</p>
           </div>
         </div>
         <div className="row">
