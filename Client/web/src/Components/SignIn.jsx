@@ -30,18 +30,22 @@ const SignIn = ({setIsLoggedIn}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setCookie('name',username,365)
+        setCookie('name',formData.username,365)
         if (!formData.username || !formData.password) {
             setError('Please enter both username and password.');
             return;
         }
-        
-        
         setError('');
-
+        axios.post('http://localhost:3000/login',{
+            name:formData.username,
+            password:formData.password
+        }).then((response)=>{
+        setCookie('name',formData.username,365)
+        console.log('Signing up...');
         console.log(formData); 
         setIsLoggedIn(true);
         Navigate("/");
+  }).catch((error)=>{console.error(error)});
     }
 
     return (
