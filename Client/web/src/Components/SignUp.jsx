@@ -19,10 +19,15 @@ function setCookie(name, value, daysToExpire) {
 }
   const handleSignUp = (e) => {
     e.preventDefault();
-    setCookie('name',username,365)
-    console.log('Signing up...');
-    setIsLoggedIn(true);
-    Navigate("/")
+    axios.post('http://localhost:3000/login',{
+                name:username,
+                password:password
+            }).then((response)=>{setCookie('name',username,365)
+            console.log('Signing up...');
+            setIsLoggedIn(true);
+            Navigate("/")
+      }).catch((error)=>{console.error(error)});
+    
   };
 
   return (

@@ -5,6 +5,9 @@ const app = express();
 const port = 3000
 const cors = require('cors');
 const FeedbackRouter = require("./Routes/Feedback.route");
+const {login,signup} = require('./Routes/Authserver')
+const bodyParser = require('body-parser')
+app.use(bodyParser.json())
 app.use(cors())
 
 app.get('/', (req, res) => {
@@ -14,8 +17,11 @@ app.get('/', (req, res) => {
   })
 
 });
+app.use(login)
+app.use(signup)
 app.use(express.json())
 app.use(FeedbackRouter)
+
 
 
 
