@@ -20,6 +20,7 @@ import Workoutplan from './Components/Workoutplan.jsx';
 import Subscribe from './Components/Subscribe.jsx';
 import Premium from './Components/premium.jsx';
 import Platinum from './Components/Platinum.jsx';
+import Instruction from './Components/Instruction.jsx';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -46,6 +47,8 @@ const App = () => {
         <Route path='/Subscribe'element={<Subscribe/>}/>
         <Route path='/Premium'element={<Premium/>}/>
         <Route path='/Platinum'element={<Platinum/>}/>
+        <Route path='/Instruction'element={<Instruction/>}/>
+
 
 
 

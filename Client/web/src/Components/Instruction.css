@@ -1,0 +1,49 @@
+/* Instruction.css */
+
+/* Style for the container div */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style for the heading */
+  h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the paragraph */
+  p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  /* Style for the ordered list */
+  ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+  
+  /* Style for list items */
+  li {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for strong elements within list items */
+  li strong {
+    color: #333;
+  }
+  
+  /* Style for the final paragraph */
+  .final-para {
+    color: #555;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  

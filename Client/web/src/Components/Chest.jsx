@@ -34,6 +34,9 @@ function Chest() {
               <img src={exercise.src} alt={exercise.name} />
             </a>
             <p>click the image to see the video</p>
+          <Link to="/Instruction">
+            <button>INSTRUCTIONS</button>
+          </Link>
           </li>
         ))}
       </ul>
