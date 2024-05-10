@@ -21,7 +21,7 @@ import Subscribe from './Components/Subscribe.jsx';
 import Premium from './Components/premium.jsx';
 import Platinum from './Components/Platinum.jsx';
 import Instruction from './Components/Instruction.jsx';
-
+import Faq from './Components/Faq.jsx';
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
@@ -47,6 +47,8 @@ const App = () => {
         <Route path='/Subscribe'element={<Subscribe/>}/>
         <Route path='/Premium'element={<Premium/>}/>
         <Route path='/Platinum'element={<Platinum/>}/>
+        <Route path='/Faq'element={<Faq/>}/>
+
         <Route path='/Instruction'element={<Instruction/>}/>
 
 

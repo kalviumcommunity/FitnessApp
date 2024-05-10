@@ -22,25 +22,24 @@
     margin-bottom: 15px;
   }
   
-  /* Style for the ordered list */
+ 
   ol {
     list-style-type: decimal;
     padding-left: 20px;
   }
   
-  /* Style for list items */
+
   li {
     color: #777;
     font-size: 14px;
     margin-bottom: 10px;
   }
   
-  /* Style for strong elements within list items */
   li strong {
     color: #333;
   }
   
-  /* Style for the final paragraph */
+
   .final-para {
     color: #555;
     font-size: 14px;
