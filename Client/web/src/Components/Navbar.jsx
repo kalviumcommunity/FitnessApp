@@ -15,6 +15,7 @@ const Navbar = () => {
                 <li><Link to="/signin">Sign In</Link></li>
                 <li><Link to="/favourite">Favorites</Link></li> 
                 <li> <Link to="/Faq">FAQ</Link></li>
+                <li> <Link to="/Event">Event</Link></li>
             </ul>
         <div className='button'>
         <Link to ="/Membership">
