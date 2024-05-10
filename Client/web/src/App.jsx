@@ -22,6 +22,7 @@ import Premium from './Components/premium.jsx';
 import Platinum from './Components/Platinum.jsx';
 import Instruction from './Components/Instruction.jsx';
 import Faq from './Components/Faq.jsx';
+import Event from './Components/Event.jsx';
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
@@ -48,6 +49,8 @@ const App = () => {
         <Route path='/Premium'element={<Premium/>}/>
         <Route path='/Platinum'element={<Platinum/>}/>
         <Route path='/Faq'element={<Faq/>}/>
+        <Route path='/Event'element={<Event/>}/>
+
 
         <Route path='/Instruction'element={<Instruction/>}/>
 
