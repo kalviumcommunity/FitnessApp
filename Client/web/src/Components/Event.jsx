@@ -28,7 +28,7 @@ function Event() {
               <p>Location: {event.location}</p>
             </div>
             <div className="rsvp-button">
-              <button onClick={() => handleRSVP(event.id)}>RSVP</button>
+              <button onClick={() => handleRSVP(event.id)}>JOIN</button>
             </div>
           </div>
         ))}
