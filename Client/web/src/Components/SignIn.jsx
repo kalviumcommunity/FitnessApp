@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import { Link , useNavigate } from 'react-router-dom';
 import './SignIn.css'; 
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import googleimg from "../assets/google.png"
+import auth from './Firebase.config'
+
+
 
 const SignIn = ({setIsLoggedIn}) => {
     const [formData, setFormData] = useState({
@@ -47,7 +52,25 @@ const SignIn = ({setIsLoggedIn}) => {
         Navigate("/");
   }).catch((error)=>{console.error(error)});
     }
-
+    const google = async (e) => {
+        const provider = new GoogleAuthProvider();
+        function setCookie(name, value, daysToExpire) {
+          let date = new Date();
+          date.setTime(date.getTime() + daysToExpire * 24 * 60 * 60 * 1000);
+          document.cookie = name + '=' + value + ';expires=' + date.toUTCString() + ';path=/';
+      }
+        try {
+          const result = await signInWithPopup(auth, provider);
+          console.log(result);
+          setCookie('logedin',true,365)
+          setCookie("username",result.user.displayName,365);
+          setCookie('token', result.user.accessToken,365);
+          setIsLoggedIn(true);
+          Navigate('/'); 
+        } catch (error) {
+          console.error(error.message);
+        }
+      }
     return (
         <div className="sign-in-container">
             <h2 className="sign-in-title">Sign In</h2>
@@ -63,6 +86,9 @@ const SignIn = ({setIsLoggedIn}) => {
                 </div>
                 <button type="submit">Sign In</button>
             </form>
+            <div>
+            <img className='g_icon' src={googleimg} onClick={google} alt="google icon" />
+            </div>
             <p className="sign-up-link">Don't have an account? <Link to="/signup">Sign Up</Link></p>
         </div>
     );
