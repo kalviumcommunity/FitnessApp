@@ -23,6 +23,7 @@ import Platinum from './Components/Platinum.jsx';
 import Instruction from './Components/Instruction.jsx';
 import Faq from './Components/Faq.jsx';
 import Event from './Components/Event.jsx';
+import Chestworkout from './Components/Chestworkout.jsx';
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
@@ -50,8 +51,7 @@ const App = () => {
         <Route path='/Platinum'element={<Platinum/>}/>
         <Route path='/Faq'element={<Faq/>}/>
         <Route path='/Event'element={<Event/>}/>
-
-
+        <Route path='/Chestworkout'element={<Chestworkout/>}/>
         <Route path='/Instruction'element={<Instruction/>}/>
 
 

@@ -1,5 +1,6 @@
 import React from 'react';
-import"./Workoutplan.css"
+import { Link } from 'react-router-dom';
+import './Workoutplan.css';
 
 const Workoutplan = () => {
   return (
@@ -8,7 +9,9 @@ const Workoutplan = () => {
       <div className="day">
         <h2>Monday</h2>
         <ul>
-          <li>Chest workout</li>
+          <li>
+            <Link to="/chestworkout">Chest workout</Link>
+          </li>
           <li>Triceps workout</li>
         </ul>
       </div>
