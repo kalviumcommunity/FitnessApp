@@ -32,17 +32,7 @@
   margin-bottom: 8px;
 }
 
-
-.day:nth-child(odd) {
-  background-color: #fff;
-}
-
-
-.day:nth-child(even) {
-  background-color: #f0f0f0;
-}
-
 .day ul li:hover {
-  color: #007bff;
+  color: black;
   cursor: pointer;
 }

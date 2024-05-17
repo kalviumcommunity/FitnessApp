@@ -1,0 +1,52 @@
+.weekly-workout-plan {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .weekly-workout-plan h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .day {
+    margin-bottom: 30px;
+  }
+  
+  .day h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .day ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .day ul li {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .day ul li:hover {
+    color: black;
+    cursor: pointer;
+  }
+  
+  .day ul li a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 8px 0;
+  }
+  
+  .day ul li a:hover {
+    color:black;
+  }
+  a{
+    background-color: #f9f9f9;
+  }
