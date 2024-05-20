@@ -1,17 +1,14 @@
 import React, { useState } from 'react';
-import "./Event.css"
+import { Link } from 'react-router-dom';
+import './Event.css';
 
 function Event() {
-
   const [events, setEvents] = useState([
     { id: 1, title: 'Fitness Tips', date: '2024-05-15', time: '10:00 AM', location: 'Studio A' },
     { id: 2, title: 'CrossFit Workshop', date: '2024-05-20', time: '6:00 PM', location: 'Gym Floor' },
-    
   ]);
 
-  
   const handleRSVP = (eventId) => {
-    
     console.log(`RSVP for event with ID ${eventId} handled`);
   };
 
@@ -28,7 +25,9 @@ function Event() {
               <p>Location: {event.location}</p>
             </div>
             <div className="rsvp-button">
-              <button onClick={() => handleRSVP(event.id)}>JOIN</button>
+              <Link to={{ pathname: '/Eventform', state: { event } }}>
+                <button onClick={() => handleRSVP(event.id)}>JOIN</button>
+              </Link>
             </div>
           </div>
         ))}
