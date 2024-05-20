@@ -24,6 +24,7 @@ import Instruction from './Components/Instruction.jsx';
 import Faq from './Components/Faq.jsx';
 import Event from './Components/Event.jsx';
 import Chestworkout from './Components/Chestworkout.jsx';
+import Eventform from './Components/Eventform.jsx';
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
@@ -53,6 +54,7 @@ const App = () => {
         <Route path='/Event'element={<Event/>}/>
         <Route path='/Chestworkout'element={<Chestworkout/>}/>
         <Route path='/Instruction'element={<Instruction/>}/>
+        <Route path='/Eventform'element={<Eventform/>}/>
 
 
 
