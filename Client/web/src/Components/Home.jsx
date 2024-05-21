@@ -11,6 +11,7 @@ import Triceps from './Triceps';
 import Forearms from './Forearms';
 import Leg from './Leg';
 import Workoutplan from './Workoutplan';
+import Crisp from './Crisp'; // Import the Crisp component
 
 const Home = () => {
     const [activeComponent, setActiveComponent] = useState(null);
@@ -21,6 +22,7 @@ const Home = () => {
 
     return (
         <>
+            <Crisp /> {/* Add the Crisp component here */}
             <div className="home-container" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover' }}>
                 <div className="inner-box box below">
                     <img src={WORKOUTS} alt="" />
@@ -70,7 +72,6 @@ const Home = () => {
                         <button className="view-workout-btn">View Workout Plan</button>
                     </Link>
                 </div>
-                
             </div>
         </>
     );

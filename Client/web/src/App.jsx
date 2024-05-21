@@ -25,6 +25,7 @@ import Faq from './Components/Faq.jsx';
 import Event from './Components/Event.jsx';
 import Chestworkout from './Components/Chestworkout.jsx';
 import Eventform from './Components/Eventform.jsx';
+import Crisp from './Components/Crisp.jsx';
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
@@ -51,6 +52,7 @@ const App = () => {
         <Route path='/Premium'element={<Premium/>}/>
         <Route path='/Platinum'element={<Platinum/>}/>
         <Route path='/Faq'element={<Faq/>}/>
+        <Route path='/Crisp'element={<Crisp/>}/>
         <Route path='/Event'element={<Event/>}/>
         <Route path='/Chestworkout'element={<Chestworkout/>}/>
         <Route path='/Instruction'element={<Instruction/>}/>
