@@ -14,7 +14,7 @@ import ImageView from './Components/imageview.jsx';
 import Triceps from './Components/Triceps.jsx';
 import Forearms from './Components/Forearms.jsx';
 import Leg from './Components/Leg.jsx';
-import Favourite from './Components/Favourite.jsx';
+import Save from './Components/Save.jsx';
 import Membership from './Components/Membership.jsx';
 import Workoutplan from './Components/Workoutplan.jsx';
 import Subscribe from './Components/Subscribe.jsx';
@@ -44,9 +44,8 @@ const App = () => {
         <Route path="/Triceps" element={<Triceps/>} />
         <Route path="/Forearms" element={<Forearms/>} />
         <Route path="/Leg" element={<Leg/>} />
-        <Route path='/fav' element={<Favourite/>}/>
         <Route path='/membership' element={<Membership/>}/>
-        <Route path='/Favourite' element={<Favourite/>}/>
+        <Route path='/Save' element={<Save/>}/>
         <Route path='/Workoutplan'element={<Workoutplan/>}/>
         <Route path='/Subscribe'element={<Subscribe/>}/>
         <Route path='/Premium'element={<Premium/>}/>
