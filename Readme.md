@@ -16,3 +16,6 @@ This is a simple fitness website designed to help users stay fit and healthy.
 - Node.js
 - Express.js
 - MongoDB
+
+## deployement link
+https://sparkling-brioche-abba33.netlify.app/
