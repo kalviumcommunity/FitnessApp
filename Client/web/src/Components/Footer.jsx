@@ -1,47 +1,56 @@
 import React from 'react';
-import "./Footer.css";
-import '@fortawesome/fontawesome-free/css/all.css';
+import './Footer.css';
+import { Link } from 'react-router-dom';
+import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 
-
-const Footer = () => {
-  return (
-    <footer className="footer">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-6">
-            <h4>About GoFit</h4>
-            <p>GoFit is your ultimate fitness companion, helping you achieve your health and wellness goals. With personalized workout plans and expert guidance, we empower you to live a healthier life.</p>
-          </div>
-          <div className="col-md-3">
-            <h4>Contact Us</h4>
-            <p>Phone: 9443541516</p>
-            <p>Email: info@gofit.com</p>
-          </div>
-          <div className="col-md-3">
-            <h4>Address</h4>
-            <p>12, Ambedkar Street</p>
-            <p>Pallavaram </p>
-            <p>Chennai</p>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-12">
-            <p>&copy; {new Date().getFullYear()} GoFit All rights reserved.</p>
-            <p>Follow us on Social media</p>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-12">
-            <div className="social-media-icons">
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
-              <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
-              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook"></i></a>
+function Footer() {
+    return (
+        <footer className="footer">
+            <div className="footer-content">
+                <div className="footer-section">
+                    <img src="" alt="Logo" className="logo" />
+                </div>
+                <div className="footer-section">
+                    <h3 className="footer-title">Contact</h3>
+                    <p>No.1, 2nd Floor, 3rd Main Road, Thiruthani Nagar, Old Pallavaram, Chennai - 600117 (Above London Bakery)</p>
+                    <p>Email: kiruthik@gmail.com</p>
+                    <p>Phone: +91 9443541516</p>
+                   
+                </div>
+                <div className="footer-section">
+                    <h3 className="footer-title">Quick Links</h3>
+                    <ul className="footer-links">
+                        <li><Link className="footer-link" to="/customer">Feedback</Link></li>
+                        <li><Link className="footer-link" to="/conditions">Terms & Conditions</Link></li>
+                        <li><Link className="footer-link" to="/privacy">Privacy Policy</Link></li>
+                    </ul>
+                </div>
+                <div className="footer-section">
+                    <h3 className="footer-title">Follow Us</h3>
+                    <ul className="footer-social">
+                        <li>
+                            <a href="#facebook" className="footer-social-link">
+                                <FaFacebookF size={20} />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#twitter" className="footer-social-link">
+                                <FaTwitter size={20} />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#instagram" className="footer-social-link">
+                                <FaInstagram size={20} />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  );
+            <div className="footer-copyright">
+                <p>&copy; {new Date().getFullYear()} © 2024 GoFit All rights reserved.</p>
+            </div>
+        </footer>
+    );
 }
 
 export default Footer;
