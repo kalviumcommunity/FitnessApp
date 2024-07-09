@@ -19,10 +19,10 @@ FeedbackRouter.post('/api/feedback', async (req, res) => {
             const formData = await Feedback.create({ name, feedback, rating });
             res.status(201).json(formData);
         } else {
+            console.error(error);
             return res.status(400).send({
                 message: `Bad request: ${error}`
             });
-            console.error(error);
         }
     } catch (err) {
         console.log(err);
@@ -49,11 +49,45 @@ FeedbackRouter.patch('/api/feedback/:id', async (req, res) => {
 
             res.status(200).json(updatedFeedback);
         } else {
+            console.error(error);
             return res.status(400).send({
                 message: `Bad request: ${error}`
             });
-            console.error(error);
         }
+    } catch (err) {
+        console.log(err);
+        return res.status(500).send({
+            message: `Internal server error: ${err}`
+        });
+    }
+});
+
+
+FeedbackRouter.get('/api/feedback', async (req, res) => {
+    try {
+        const feedbacks = await Feedback.find();
+        res.status(200).json(feedbacks);
+    } catch (err) {
+        console.log(err);
+        return res.status(500).send({
+            message: `Internal server error: ${err}`
+        });
+    }
+});
+
+
+FeedbackRouter.get('/api/feedback/:id', async (req, res) => {
+    try {
+        const { id } = req.params;
+        const feedback = await Feedback.findById(id);
+        
+        if (!feedback) {
+            return res.status(404).send({
+                message: 'Feedback not found'
+            });
+        }
+
+        res.status(200).json(feedback);
     } catch (err) {
         console.log(err);
         return res.status(500).send({
