@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import './Eventform.css';
 
 function Eventform() {
@@ -11,6 +13,8 @@ function Eventform() {
     comments: ''
   });
 
+  const navigate = useNavigate();
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -19,15 +23,22 @@ function Eventform() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form data submitted:', formData);
-    // You can add logic to send the form data to a server or API here.
+    try {
+      const response = await axios.post('https://s51-kiruthik-capstone-fitnessapp.onrender.com/api/register', formData);
+      console.log('Registration successful:', response.data);
+      // Navigate to home page on success
+      navigate('/Home');
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      // Handle error, e.g., show an error message to the user
+    }
   };
 
   return (
     <div className="form-container">
-      <h1>Event Registration Form</h1>
+      <h1 className='h1'> Event Registration Form</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Name:</label>

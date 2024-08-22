@@ -10,43 +10,41 @@ const Workoutplan = () => {
         <h2>Monday</h2>
         <ul>
           <li>
-            <Link to="/chestworkout">Chest workout</Link>
+            <Link to="/chest">Chest workout</Link>
           </li>
-          <li>Triceps workout</li>
+          <li><Link to="/Triceps">Triceps workout</Link></li>
         </ul>
       </div>
       <div className="day">
         <h2>Tuesday</h2>
         <ul>
-          <li>Shoulder workout</li>
-          <li>Biceps workout</li>
+        <li><Link to="/Shoulder">Shoulder workout</Link></li>
+          <li><Link to="/Biceps">Biceps workout</Link></li>
         </ul>
       </div>
       <div className="day">
         <h2>Wednesday</h2>
         <ul>
-          <li>Back workout</li>
-          <li>Forearms workout</li>
+          <li><Link to="/Back">Back workout</Link></li>
+          <li><Link to="/Forearms">Forearms workout</Link></li>
         </ul>
       </div>
       <div className="day">
         <h2>Thursday</h2>
         <ul>
-          <li>Triceps Workout</li>
-          <li>Arms workout</li>
+          <li><Link to="/Triceps">Triceps Workout</Link></li>
         </ul>
       </div>
       <div className="day">
         <h2>Friday</h2>
         <ul>
-          <li>Abs and Cardio</li>
+          <li><Link to="/Forearms">Forearm</Link></li>
         </ul>
       </div>
       <div className="day">
         <h2>Saturday</h2>
         <ul>
-          <li>Full body workout</li>
-          <li>Leg</li>
+          <li><Link to="/Leg">Leg</Link></li>
         </ul>
       </div>
       <div className="day">

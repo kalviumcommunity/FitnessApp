@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import "./About.css";
 import axios from "axios"
+import {toast} from 'react-toastify'
+
 
 const About = () => {
     const [feedback, setFeedback] = useState('');
@@ -27,12 +29,13 @@ const About = () => {
         e.preventDefault();
         const name= getCookie('name')
         axios
-      .post('http://localhost:3000/api/feedback', {
+      .post('https://s51-kiruthik-capstone-fitnessapp.onrender.com/api/feedback', {
         name: name,
         feedback: feedback,rating:rating
       })
       .then((response) => {
         console.log(response);
+        toast.success("Feedback submitted successfully" )
       })
       .catch((error) => {
         console.error('Error submitting feedback:', error);
@@ -75,11 +78,10 @@ const About = () => {
                         <div className="form-group">
                             <label htmlFor="rating">Rating:</label>
                             <select id="rating" value={rating} onChange={handleRatingChange} required>
-                                <option value="1">0</option>
-                                <option value="2">1</option>
-                                <option value="3">2</option>
-                                <option value="4">3</option>
-                                <option value="5">4</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
                                 <option value="5">5</option>
                             </select>
                         </div>
