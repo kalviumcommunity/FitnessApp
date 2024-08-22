@@ -1,109 +1,113 @@
-.page-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+/* SignIn.css */
+.signin-container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
-.error-message {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold; 
-}
-
-.sign-in-container {
-    width: 100%;
-    max-width: 500px; 
-    padding: 20px;
-    margin-top: 200px;
-    margin-left: 450px;
-    border: 2px solid #4CAF50; 
-    border-radius: 10px;
-    background-color: grey;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 0.5s ease forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.sign-in-title {
-    text-align: center;
-    font-size: 28px;
-    color: #4CAF50; 
-    margin-bottom: 20px;
-}
-
-.sign-in-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.sign-in-form input {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 5px;
-    width: 80%; 
-}
-
-.sign-in-form button {
-    padding: 10px 10px;
-    background-color:#4CAF50; 
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.sign-in-form button:hover {
-    background-color:  #45a049; 
-}
-
-.sign-up-link {
-    text-align: center;
-    margin-top: 15px;
-}
-
-.sign-up-link a {
-    color: #4CAF50; 
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.sign-up-link a:hover {
-    color: black;
-}
- a{
-    color: black;
-    background-color: white;
- }
- /* Styling for the container div */
-.google-auth-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.signin-title {
   
-  /* Styling for the Google icon */
-  .g_icon {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-    margin-top: 20px;
-  }
-  
-  /* Hover effect for the Google icon */
-  .g_icon:hover {
-    transform: scale(1.1);
-  }
-  
+  color: #0c0000;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.signin-form-group {
+  margin-bottom: 15px;
+}
+
+.signin-label {
+  display: block;
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.signin-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.signin-input:focus {
+  border-color: #66afe9;
+  outline: none;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.signin-submit {
+  width: 100%;
+  background: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+
+.signin-submit:hover {
+  background: #45a049;
+}
+
+.forgot-password-link {
+  color: #0066cc;
+  cursor: pointer;
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+.forgot-password button {
+  margin-top: 10px;
+  background: #ff5722;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.forgot-password button:hover {
+  background: #e64a19;
+}
+
+.g_icon {
+  width: 50px;
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.g_icon:hover {
+  transform: scale(1.1);
+}
+
+.signin-message {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signin-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signin-link:hover {
+  text-decoration: underline;
+}

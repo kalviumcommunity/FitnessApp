@@ -19,7 +19,6 @@
   margin-top: 10px;
 }
 
-/* Style for alternating background colors */
 .faq-item:nth-child(even) {
   background-color: #f9f9f9;
   border-radius: 10px;
@@ -32,12 +31,10 @@
   padding: 20px;
 }
 
-/* Hover effect */
 .faq-item:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Media query for smaller screens */
 @media (max-width: 768px) {
   .faq-question {
     font-size: 18px;

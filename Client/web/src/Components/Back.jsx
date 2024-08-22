@@ -1,23 +1,18 @@
 import React, { useState } from "react";
-import "./Back.css"; 
+import { Link } from "react-router-dom";
+import "./Back.css";
 
 function Back() {
   const [exercises, setExercises] = useState([
-    { name: "Deadlifts", sets: 3, reps: 8, weight: 200 , src:"https://tse2.explicit.bing.net/th?id=OIP.cskqyLLhSFBOAvVHspzXkAHaEJ&pid=Api&P=0&h=180",videoUrl:"https://youtu.be/AweC3UaM14o?feature=shared"}, 
-    { name: "Pull-ups", sets: 3, reps: 10, weight: "Body Weight", src:"https://tse3.mm.bing.net/th?id=OIP.14yPFkPqw1Ydm2jl0Zfy8gHaEb&pid=Api&P=0&h=180",videoUrl:"https://youtube.com/shorts/aXIbyf4EnDU?feature=shared"},
-    { name: "Barbell Rows", sets: 3, reps: 10, weight: 120 , src:"https://tse1.mm.bing.net/th?id=OIP.izLsrBR5hnIN6F89xuoh5QHaEc&pid=Api&P=0&h=180",videoUrl:"https://youtu.be/T3N-TO4reLQ?feature=shared"},
-    { name: "Dumbbell Rows", sets: 3, reps: 12, weight: 50 , src:"https://tse1.mm.bing.net/th?id=OIP.LK0SzoKFoEjpIQ8X4SiNzAHaE5&pid=Api&P=0&h=180",videoUrl:"https://youtu.be/gfUg6qWohTk?feature=shared"},
-    { name: "T-Bar Rows", sets: 3, reps: 10, weight: 100, src:"https://tse1.mm.bing.net/th?id=OIP.aQNk0Aj1BTxuBPRdUJYyCAHaFj&pid=Api&P=0&h=180" ,videoUrl:"https://youtu.be/yPis7nlbqdY?feature=shared"},
-    { name: "Cable Rows", sets: 3, reps: 12, weight: 100, src:"https://tse1.mm.bing.net/th?id=OIP.0fvCdRTT8jhHtKVbM9LNDQHaEc&pid=Api&P=0&h=180",videoUrl:"https://youtu.be/UCXxvVItLoM?feature=shared"},
-    { name: "Lat Pulldowns", sets: 3, reps: 10, weight: 100 , src:"https://tse3.mm.bing.net/th?id=OIP.Lqom5OPadf-n9d9HfvtJ9gHaJ4&pid=Api&P=0&h=180",videoUrl:"https://youtu.be/JGeRYIZdojU?feature=shared"},
-    { name: "Seated Cable Rows", sets: 3, reps: 10, weight: 90 , src:"https://tse1.mm.bing.net/th?id=OIP.QfldrvqUJDz3D3Hq1YkGtwHaFj&pid=Api&P=0&h=180",videoUrl:"https://youtube.com/shorts/TzHaXk3WSJY?feature=shared"},
-    { name: "Bent-Over Rows", sets: 3, reps: 10, weight: 95 , src:"https://tse3.mm.bing.net/th?id=OIP.PkjOIAKSuV7YwfmcZRc0xQHaEp&pid=Api&P=0&h=180",videoUrl:"https://youtu.be/qXrTDQG1oUQ?feature=shared"},
-    { name: "One-Arm Dumbbell Rows", sets: 3, reps: 10, weight: 45 ,src:"https://tse3.mm.bing.net/th?id=OIP._DdMBb8tmwOh1c9IyKiiOQHaGk&pid=Api&P=0&h=180",videoUrl:"https://youtu.be/gfUg6qWohTk?feature=shared"}
+    { name: "Deadlift", sets: 3, reps: 10, weight: 150, src: "https://www.kettlebellkings.com/cdn/shop/articles/barbell-deadlift-movement.gif?v=1692228918", videoUrl: "https://youtu.be/op9kVnSso6Q?feature=shared" },
+    { name: "Bent Over Row", sets: 3, reps: 10, weight: 100, src: "https://hips.hearstapps.com/hmg-prod/images/workouts/2016/03/barbellrow-1457038583.gif", videoUrl: "https://youtu.be/8k2cMYiG2mQ?feature=shared" },
+    { name: "Pull-Ups", sets: 3, reps: 12, weight: "Bodyweight", src: "https://i.pinimg.com/originals/82/77/25/827725c8e3653c95be7a09d0611523c2.gif", videoUrl: "https://youtu.be/WB1i8cl7EtQ?feature=shared" },
+    { name: "Lat Pulldown", sets: 3, reps: 12, weight: 90, src: "https://i.pinimg.com/originals/74/68/5a/74685a8a1b44b902c9d3ac1404844e88.gif", videoUrl: "https://youtu.be/Idl2ZZ8pTtQ?feature=shared" },
+    { name: "Seated Cable Row", sets: 3, reps: 12, weight: 70, src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD4zX-meoI7ZdS_TLLgCXaG7TsIhCgOgENsg&s", videoUrl: "https://youtu.be/GZbfZ033f74?feature=shared" },
+    { name: "Single-Arm Dumbbell Row", sets: 3, reps: 12, weight: 45, src: "https://fitnessprogramer.com/wp-content/uploads/2021/02/Dumbbell-Row.gif", videoUrl: "https://youtu.be/xi8pvq6Y6Fo?feature=shared" },
+    { name: "T-Bar Row", sets: 3, reps: 12, weight: 80, src: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOqvFL85VD4PBDTBWiCBwIDN8tDzYELNn-nfx6GChi8ABs1C3A2UI8A01md44tYbSvTFl9L517jgqVYf9hlZK-jkq_aoF5djbD3mN_8kDfiel0HaR4RWfll9d4CZu49jfgJiNJTVcywIb4ve3rwjqgSiQTOxrQMFUz-Gp2s1H5CwUFeKYvW07NtVF1CA/s360/T-Bar-Row.gif", videoUrl: "https://youtu.be/-xlFxkKTydE?feature=shared" },
+    { name: "Face Pull", sets: 3, reps: 15, weight: 50, src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv83aZQeflK-P7NBR2ShOengXRxZkbx7U6jw&s", videoUrl: "https://youtu.be/8XrseO50RoM?feature=shared" },
   ]);
-
-  const recordSet = (index) => {
-    console.log(`Recorded set for exercise ${exercises[index].name}`);
-  };
 
   return (
     <div className="back-container">
@@ -27,11 +22,17 @@ function Back() {
           <li key={index} className="exercise-item">
             <div className="exercise-name">{exercise.name}</div>
             <div className="sets-reps-weight">
-              {exercise.sets} sets of {exercise.reps} reps at {exercise.weight}
+              {exercise.sets} sets of {exercise.reps} reps at {exercise.weight} lbs
             </div>
-            
-            <img src={exercise.src} alt={exercise.name} className="exercise-image" />
-            <button className="image-button" onClick={() => recordSet(index)}>View Image</button>
+            <a href={exercise.videoUrl} target="_blank" rel="noopener noreferrer">
+              <img src={exercise.src} alt={exercise.name} style={{ width: '100%', height: 'auto' }} />
+            </a>
+            <p>Click the image to see the video</p>
+            <Link to="/Instruction">
+              <div className="save">
+                <button>INSTRUCTIONS</button>
+              </div>
+            </Link>
           </li>
         ))}
       </ul>

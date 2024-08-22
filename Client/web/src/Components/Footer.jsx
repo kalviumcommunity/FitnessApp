@@ -7,15 +7,12 @@ function Footer() {
     return (
         <footer className="footer">
             <div className="footer-content">
-                <div className="footer-section">
-                    <img src="" alt="Logo" className="logo" />
-                </div>
+               
                 <div className="footer-section">
                     <h3 className="footer-title">Contact</h3>
                     <p>No.1, 2nd Floor, 3rd Main Road, Thiruthani Nagar, Old Pallavaram, Chennai - 600117 (Above London Bakery)</p>
                     <p>Email: kiruthik@gmail.com</p>
                     <p>Phone: +91 9443541516</p>
-                   
                 </div>
                 <div className="footer-section">
                     <h3 className="footer-title">Quick Links</h3>
@@ -29,17 +26,17 @@ function Footer() {
                     <h3 className="footer-title">Follow Us</h3>
                     <ul className="footer-social">
                         <li>
-                            <a href="#facebook" className="footer-social-link">
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="footer-social-link">
                                 <FaFacebookF size={20} />
                             </a>
                         </li>
                         <li>
-                            <a href="#twitter" className="footer-social-link">
+                            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="footer-social-link">
                                 <FaTwitter size={20} />
                             </a>
                         </li>
                         <li>
-                            <a href="#instagram" className="footer-social-link">
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="footer-social-link">
                                 <FaInstagram size={20} />
                             </a>
                         </li>
@@ -47,7 +44,7 @@ function Footer() {
                 </div>
             </div>
             <div className="footer-copyright">
-                <p>&copy; {new Date().getFullYear()} © 2024 GoFit All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} GoFit. All rights reserved.</p>
             </div>
         </footer>
     );

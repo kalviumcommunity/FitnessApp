@@ -1,20 +1,17 @@
-/* Instruction.css */
 
-/* Style for the container div */
+
 .container {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
   }
   
-  /* Style for the heading */
   h2 {
     color: #333;
     font-size: 24px;
     margin-bottom: 20px;
   }
   
-  /* Style for the paragraph */
   p {
     color: #555;
     font-size: 16px;
